@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body {
+    margin: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    color: white;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 300px;
+    margin: auto;
+    padding: 50px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.display {
+    grid-column: span 4;
+    height: 40px;
+    font-size: 40px;
+    text-align: right;
+    margin-bottom: 10px;
+    height: 70px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    gap: 10px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 0px;
+    font-size: 25px;
+}
+
+.operador {
+    background-color: black;
+    color: white;
+    gap: 10px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 0px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.operadorCima {
+    background-color: white;
+    color: black;
+    gap: 10px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 0px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.zero {
+    background-color: white;
+    color: black;
+    gap: 10px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 0px;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+.operador:hover {
+    background-color: blue;
+}
+
+.zero:hover {
+    background-color: blue;
+}
+
+a {
+    color: chocolate;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: white;
+}

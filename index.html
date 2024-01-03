@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="stylle.css">
+
+</head>
+
+<body>
+    <header>
+        <!--criando uma Calculadora manipulando o DOM-->
+        <div class="calculadora"> <!--Cria uma caixa para toda a calculadora-->
+
+            <input type="text" class="display" id="resultado" readonly> <!--caixa de texto de exibição-->
+
+            <!--botões númericos e de operação-->
+
+            <!--Primeira linha de botões-->
+            <button class="operadorCima" value="" onclick="limpar()">AC</button>
+            <button class="operadorCima" valeu="**" onclick="adicionarOperador('**')">**</button>
+            <button class="operadorCima" value="%" onclick="adicionarOperador('%')">%</button>
+            <button class="operador" value="/" onclick="adicionarOperador('/')">/</button>
+            <!--Primeira linha de botões-->
+
+            <!--Segunda linha de botões-->
+            <button class="btn" value="7" onclick="adicionarNumero('7')">7</button>
+            <button class="btn" value="8" onclick="adicionarNumero('8')">8</button>
+            <button class="btn" value="9" onclick="adicionarNumero('9')">9</button>
+            <button class="operador" value="*" onclick="adicionarOperador('*')">*</button>
+            <!--Segunda linha de botões-->
+
+            <!--Terceira linha de botões-->
+            <button class="btn" value="4" onclick="adicionarNumero('4')">4</button>
+            <button class="btn" value="5" onclick="adicionarNumero('5')">5</button>
+            <button class="btn" value="6" onclick="adicionarNumero('6')">6</button>
+            <button class="operador" value="-" onclick="adicionarOperador('-')">-</button>
+            <!--Terceira linha de botões-->
+
+            <!--Quarta linha de botões-->
+            <button class="btn" value="1" onclick="adicionarNumero('1')">1</button>
+            <button class="btn" value="2" onclick="adicionarNumero('2')">2</button>
+            <button class="btn" value="3" onclick="adicionarNumero('3')">3</button>
+            <button class="operador" value="+" onclick="adicionarOperador('+')">+</button>
+            <!--Quarta linha de botões-->
+
+            <!--Quinta linha de botões-->
+            <button class="zero" value="0" onclick="adicionarNumero('0')">0</button>
+            <button class="btn" value="." onclick="adicionarNumero('.')">,</button>
+            <button class="operador" value="=" onclick="calcular()">=</button>
+            <!--Quinta linha de botões-->
+
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
